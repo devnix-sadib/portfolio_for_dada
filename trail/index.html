@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar with Dimming Effect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white">
+    <div id="app" class="relative">
+        <!-- Overlay (for dimming effect) -->
+        <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden transition-opacity duration-300 z-10"></div>
+
+        <!-- Sidebar -->
+        <div id="sidebar" class="fixed top-0 left-0 h-full w-64 bg-gray-800 transform -translate-x-full transition-transform duration-300 z-20">
+            <div class="p-6">
+                <div class="flex justify-center mb-4">
+                    <img src="https://via.placeholder.com/80" alt="Profile" class="h-16 w-16 rounded-full">
+                </div>
+                <p class="text-center mb-6">Inbio is a personal portfolio template. You can customize all.</p>
+                <nav class="space-y-4">
+                    <a href="#home" class="block hover:text-gray-400">HOME</a>
+                    <a href="#features" class="block hover:text-gray-400">FEATURES</a>
+                    <a href="#portfolio" class="block hover:text-gray-400">PORTFOLIO</a>
+                    <a href="#resume" class="block hover:text-gray-400">RESUME</a>
+                    <a href="#clients" class="block hover:text-gray-400">CLIENTS</a>
+                    <a href="#pricing" class="block hover:text-gray-400">PRICING</a>
+                    <a href="#blog" class="block hover:text-gray-400">BLOG</a>
+                    <a href="#contact" class="block hover:text-gray-400">CONTACT</a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <div class="p-4 bg-gray-900 flex justify-between items-center">
+            <h1 class="text-xl font-semibold">INBIO</h1>
+            <button id="menuButton" class="text-white bg-gray-700 px-4 py-2 rounded">
+                &#9776;
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const menuButton = document.getElementById("menuButton");
+        const sidebar = document.getElementById("sidebar");
+        const overlay = document.getElementById("overlay");
+
+        // Function to toggle sidebar and overlay
+        menuButton.addEventListener("click", () => {
+            sidebar.classList.toggle("-translate-x-full");
+            overlay.classList.toggle("hidden");
+            overlay.classList.toggle("opacity-100");
+        });
+
+        // Close sidebar when clicking on the overlay
+        overlay.addEventListener("click", () => {
+            sidebar.classList.add("-translate-x-full");
+            overlay.classList.add("hidden");
+            overlay.classList.remove("opacity-100");
+        });
+    </script>
+</body>
+
+</html>
