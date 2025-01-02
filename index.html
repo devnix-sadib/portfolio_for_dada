@@ -9,7 +9,7 @@
     <title>dada's portfolio</title>
     <style>
         .dark-bg {
-            background-color: #e2e8f0;
+            background-color: #ecf0f3;
             color: #f8fafc;
         }
 
@@ -23,20 +23,23 @@
         }
 
         #mobileMenu.dark-bg {
-            background-color: #e2e8f0;
+            background-color: #ecf0f3;
+        }
+        .redText{
+            color: #ff014f;
         }
     </style>
 </head>
 
-<body class="bg-slate-200 relative">
-    <header class="p-4 shadow z-30 bg-slate-200 fixed w-full">
+<body class="bg-customGreen relative">
+    <header class="p-4 shadow z-30 bg-customGreen fixed w-full">
         <div class="container mx-auto flex items-center justify-between">
             <div class="flex items-center">
                 <img src="img/dada.jpg" alt="Profile" class="h-12 w-12 rounded-full lg:block">
                 <h1 class="text-xl font-bold ml-3">ABIR</h1>
             </div>
 
-            <nav class="hidden lg:flex space-x-8 text-gray-800  text-sm font-medium hover:text-black">
+            <nav class="hidden lg:flex space-x-8 text-gray-800  text-sm font-medium font-sans hover:text-black">
                 <a href="#home">HOME</a>
                 <a href="#features">FEATURES</a>
                 <a href="#skills">SKILLS</a>
@@ -57,7 +60,7 @@
             <div class="flex justify-center mb-4">
                 <img src="img/dada.jpg" alt="Profile" class="h-16 w-16 rounded-full">
             </div>
-            <nav class="space-y-4">
+            <nav class="space-y-4 font-sans">
                 <a href="#home" class="block">HOME</a>
                 <a href="#features" class="block">FEATURES</a>
                 <a href="#skills" class="block">SKILLS</a>
@@ -68,7 +71,18 @@
 
     <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-20 lg:hidden"></div>
 
-   
+    <!--home --> 
+ <div id="home" class="px-24 pt-32 ">
+        <div>
+        <p class="font-sans">WELCOME TO MY WORLD</p>
+        </div>
+    <div class="font-bold  lg:text-6xl relative flex pt-5 ,md:text-5xl ">
+        <h1 class=" ">HI,  I'M <h1 class="redText pl-3 text-redcolor">ABIR BIN BILLA </h1> </h1>
+    </div>
+    <div>
+        <h2 class="font-bold  lg:redText text-6xl md:text-5xl">a</h2>
+    </div>
+</div>
     <script>
         const menuButton = document.getElementById("menuButton");
         const mobileMenu = document.getElementById("mobileMenu");
