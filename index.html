@@ -10,7 +10,7 @@
     <style>
         .dark-bg {
             background-color: #ecf0f3;
-            color: #f8fafc;
+            color: black;
         }
 
         .dark-bg a {
@@ -32,8 +32,8 @@
     </style>
 </head>
 
-<body class="bg-customGreen relative">
-    <header class="p-4 shadow z-30 bg-customGreen fixed w-full">
+<body class="bg-customGreen relative dark-bg"> <!-- Added dark-bg here for the whole page -->
+    <header class="p-4 shadow z-30 bg-customGreen fixed w-full dark-bg"> <!-- dark-bg added here -->
         <div class="container mx-auto flex items-center justify-between">
             <div class="flex items-center">
                 <img src="img/dada.jpg" alt="Profile" class="h-12 w-12 rounded-full">
@@ -71,19 +71,25 @@
 
     <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-20 lg:hidden"></div>
 
-    <main id="home" class="px-6 md:px-12 lg:px-24 pt-32">
-        <div>
-            <p class=" text-lg font-sans">WELCOME TO MY WORLD</p>
+<main id="home" class="px-6 md:px-12 lg:px-24 pt-32">
+    <div class="flex flex-wrap lg:flex-nowrap items-center">
+        <!-- Text Section -->
+        <div class="w-full lg:w-1/2 mb-8 lg:mb-0 order-2 md:order-none">
+            <p class="text-lg font-sans">WELCOME TO MY WORLD</p>
+            <div class="font-bold text-3xl md:text-5xl lg:text-6xl pt-5">
+                <h1>HI, I'M</h1>
+                <span class="redText">ABIR BIN BILLA</span>
+            </div>
+            <div class="mt-4">
+                <h2 class="font-bold text-xl md:text-3xl lg:text-5xl redText">A Frontend Developer</h2>
+            </div>
         </div>
-        <div class="font-bold text-3xl md:text-5xl lg:text-6xl relative flex flex-wrap  pt-5">
-            <h1>HI, I'M</h1>
-            <span class="redText pl-3">ABIR BIN BILLA</span>
+         <!-- Image Section -->
+         <div class="w-full lg:w-1/2 flex justify-center lg:justify-end order-1 md:order-none">
+            <img src="img/dada.jpg" alt="Hero Image" class="w-3/4 lg:w-full rounded-lg shadow-lg">
         </div>
-        <div class=" mt-4">
-            <h2 class="font-bold text-xl md:text-3xl lg:text-5xl redText">A Frontend Developer</h2>
-        </div>
-        <div><img src="img/dada.jpg" alt="Profile" class="flex"></div>
-    </main>
+    </div>
+</main>
 
     <script>
         const menuButton = document.getElementById("menuButton");
