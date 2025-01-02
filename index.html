@@ -15,7 +15,7 @@
 
         .dark-bg a {
             color: #1f2937;
-            transition: color 0.3s ease; /* Smooth color transition on hover */
+            transition: color 0.3s ease;
         }
 
         .dark-bg a:hover {
@@ -25,7 +25,8 @@
         #mobileMenu.dark-bg {
             background-color: #ecf0f3;
         }
-        .redText{
+
+        .redText {
             color: #ff014f;
         }
     </style>
@@ -35,18 +36,18 @@
     <header class="p-4 shadow z-30 bg-customGreen fixed w-full">
         <div class="container mx-auto flex items-center justify-between">
             <div class="flex items-center">
-                <img src="img/dada.jpg" alt="Profile" class="h-12 w-12 rounded-full lg:block">
+                <img src="img/dada.jpg" alt="Profile" class="h-12 w-12 rounded-full">
                 <h1 class="text-xl font-bold ml-3">ABIR</h1>
             </div>
 
-            <nav class="hidden lg:flex space-x-8 text-gray-800  text-sm font-medium font-sans hover:text-black">
-                <a href="#home">HOME</a>
-                <a href="#features">FEATURES</a>
-                <a href="#skills">SKILLS</a>
-                <a href="#contact">CONTACT</a>
+            <nav class="hidden lg:flex space-x-8 text-gray-800 text-sm font-medium hover:text-black">
+                <a href="#home" class="hover:underline">HOME</a>
+                <a href="#features" class="hover:underline">FEATURES</a>
+                <a href="#skills" class="hover:underline">SKILLS</a>
+                <a href="#contact" class="hover:underline">CONTACT</a>
             </nav>
 
-            <button id="menuButton" class="lg:hidden  space-y-1">
+            <button id="menuButton" class="lg:hidden space-y-1">
                 <div class="bg-red-500 h-1 w-6 rounded-sm"></div>
                 <div class="bg-red-500 h-1 w-6 rounded-sm"></div>
                 <div class="bg-red-500 h-1 w-6 rounded-sm"></div>
@@ -54,35 +55,36 @@
         </div>
     </header>
 
-    <div id="mobileMenu"
-        class="fixed top-0 left-0 h-full w-64 text-gray-800 transform -translate-x-full transition-transform duration-300 z-40 lg:hidden dark-bg">
+    <div id="mobileMenu" class="fixed top-0 left-0 h-full w-64 transform -translate-x-full transition-transform duration-300 z-40 lg:hidden dark-bg">
         <div class="p-6">
             <div class="flex justify-center mb-4">
                 <img src="img/dada.jpg" alt="Profile" class="h-16 w-16 rounded-full">
             </div>
-            <nav class="space-y-4 font-sans">
-                <a href="#home" class="block">HOME</a>
-                <a href="#features" class="block">FEATURES</a>
-                <a href="#skills" class="block">SKILLS</a>
-                <a href="#contact" class="block">CONTACT</a>
+            <nav class="space-y-4">
+                <a href="#home" class="block hover:underline">HOME</a>
+                <a href="#features" class="block hover:underline">FEATURES</a>
+                <a href="#skills" class="block hover:underline">SKILLS</a>
+                <a href="#contact" class="block hover:underline">CONTACT</a>
             </nav>
         </div>
     </div>
 
     <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-20 lg:hidden"></div>
 
-    <!--home --> 
- <div id="home" class="px-24 pt-32 ">
+    <main id="home" class="px-6 md:px-12 lg:px-24 pt-32">
         <div>
-        <p class="font-sans">WELCOME TO MY WORLD</p>
+            <p class=" text-lg font-sans">WELCOME TO MY WORLD</p>
         </div>
-    <div class="font-bold  lg:text-6xl relative flex pt-5 ,md:text-5xl ">
-        <h1 class=" ">HI,  I'M <h1 class="redText pl-3 text-redcolor">ABIR BIN BILLA </h1> </h1>
-    </div>
-    <div>
-        <h2 class="font-bold  lg:redText text-6xl md:text-5xl">a</h2>
-    </div>
-</div>
+        <div class="font-bold text-3xl md:text-5xl lg:text-6xl relative flex flex-wrap  pt-5">
+            <h1>HI, I'M</h1>
+            <span class="redText pl-3">ABIR BIN BILLA</span>
+        </div>
+        <div class=" mt-4">
+            <h2 class="font-bold text-xl md:text-3xl lg:text-5xl redText">A Frontend Developer</h2>
+        </div>
+        <div><img src="img/dada.jpg" alt="Profile" class="flex"></div>
+    </main>
+
     <script>
         const menuButton = document.getElementById("menuButton");
         const mobileMenu = document.getElementById("mobileMenu");
