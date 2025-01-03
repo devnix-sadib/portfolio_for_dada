@@ -39,6 +39,9 @@
         .redText {
             color: #ff014f;
         }
+        .line{
+            background-color: #ff014f;
+        }
     </style>
 </head>
 
@@ -58,9 +61,9 @@
             </nav>
 
             <button id="menuButton" class="lg:hidden space-y-1">
-                <div class="bg-red-500 h-1 w-6 rounded-sm"></div>
-                <div class="bg-red-500 h-1 w-6 rounded-sm"></div>
-                <div class="bg-red-500 h-1 w-6 rounded-sm"></div>
+                <div class="line h-1 w-6 rounded-sm"></div>
+                <div class="line h-1 w-6 rounded-sm"></div>
+                <div class="line h-1 w-6 rounded-sm"></div>
             </button>
         </div>
     </header>
@@ -80,26 +83,30 @@
     </div>
 
     <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-20 lg:hidden"></div>
-
-<main id="home" class="px-6 md:px-12 lg:px-24 pt-32">
-    <div class="flex flex-wrap lg:flex-nowrap items-center">
-        <!-- Text Section -->
-        <div class="w-full lg:w-1/2 mb-8 lg:mb-0 order-2 md:order-none">
-            <p class="text-lg font-sans">WELCOME TO MY WORLD</p>
-            <div class="font-bold text-3xl md:text-5xl lg:text-6xl pt-5">
-                <h1>HI, I'M</h1>
-                <span class="redText">ABIR BIN BILLA</span>
+    <main id="home" class="px-6 md:px-12 lg:px-24 pt-32">
+        <div class="flex flex-wrap items-center lg:flex-nowrap gap-8 lg:gap-16">
+            <!-- Image Section -->
+            <div class="w-full lg:w-1/2 flex justify-center lg:justify-end order-1 md:order-2 p-4 md:p-6 lg:p-8">
+                <img src="img/dada.jpg" alt="Hero Image" class="w-3/4 lg:w-full rounded-lg shadow-lg">
             </div>
-            <div class="mt-4">
-              <span id="animation"  class="font-bold text-xl md:text-3xl lg:text-5xl redText"></span>  
+            <!-- Text Section -->
+            <div class="w-full lg:w-1/2 mb-8 lg:mb-0 order-2 md:order-1 p-4 md:p-6 lg:p-8">
+                <p class="text-lg font-sans">WELCOME TO MY WORLD</p>
+                <div class="font-bold text-3xl md:text-3xl lg:text-6xl pt-5">
+                    <h1>HI, I'M</h1>
+                    <span class="redText">ABIR BIN BILLA</span>
+                </div>
+                <div class="mt-4 ">
+                    <span id="animation" class="font-bold text-xl md:text-xl lg:text-5xl text-black"></span>
+                </div>
+                <p class="text-base md:text-lg lg:text-xl text-gray-700 mt-6">
+                    I develop intuitive iOS and Android apps using Swift and Kotlin, with a passion for technology and mentoring. 
+                    I strive to create seamless user experiences and innovative solutions.
+                </p>
             </div>
         </div>
-         <!-- Image Section -->
-         <div class="w-full lg:w-1/2 flex justify-center lg:justify-end order-1 md:order-none">
-            <img src="img/dada.jpg" alt="Hero Image" class="w-3/4 lg:w-full rounded-lg shadow-lg">
-        </div>
-    </div>
-</main>
+    </main>
+    
 
     <script>
         const menuButton = document.getElementById("menuButton");
