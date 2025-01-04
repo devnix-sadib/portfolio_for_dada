@@ -42,12 +42,21 @@
         .line{
             background-color: #ff014f;
         }
-        .a-bg:hover{
-            background-color: #ff014f;
-            transition: color 0.4s ease;
-            transform: scale(1.2); 
-            filter: brightness(1.2); 
-        }
+        .a-bg {
+    position: relative;
+    background: linear-gradient(to bottom,  #e1e5e9, #ced4d8 ,#ffffff,);
+    transition: transform 0.4s ease, filter 0.4s ease, background 0.4s ease, box-shadow 0.4s ease; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);/* transition for box-shadow */
+}
+
+.a-bg:hover {
+    background: linear-gradient(to bottom, #ff014f, #ff014f); /* change gradient to a solid color */
+    transform: scale(1.2); 
+    filter: brightness(1.2); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* added shadow around the element */
+}
+
+
     </style>
 </head>
 
@@ -113,17 +122,20 @@
         </div>
               
           <div class="px-5 pl-9">
-            <p class="pb-7">FIND WITH ME</p>
+       <div class="flex">
+        <p class="pb-7">FIND WITH ME</p>
+        <p class="pl-44">BEST SKILL ON</p>
+       </div>
             <div class=" flex">
                 <div class="flex space-x-10 ">
-                    <a href=""><img class="a-bg h-12 w-12 p-3 rounded-md hover:a-bg" src="img/fb.png"></a>
-                    <a href=""><img class="a-bg h-12 w-12 p-3 rounded-md hover:a-bg" src="img/photo.png"></a>
-                    <a href=""><img class="a-bg h-12 w-12 p-3 rounded-md hover:a-bg" src="img/lin.png"></a>
+                    <a href="https://www.facebook.com/bin.abir509"><img class="a-bg h-12 w-12 p-3 rounded-md hover:a-bg" src="img/fb.png"></a>
+                    <a href="https://www.instagram.com/litti_spy/"><img class="a-bg h-12 w-12 p-3 rounded-md hover:a-bg" src="img/photo.png"></a>
+                    <a href="https://www.linkedin.com/in/abir-bin-billal-74b33a237/"><img class="a-bg h-12 w-12 p-3 rounded-md hover:a-bg" src="img/lin.png"></a>
                   </div>
-                  <div class="flex pl-14">
-                <img class="a-bg h-12 w-12 p-3 rounded-md hover:a-bg" src="">
-                <img class="a-bg h-12 w-12 p-3 rounded-md hover:a-bg" src="">
-                <img class="a-bg h-12 w-12 p-3 rounded-md hover:a-bg" src="">
+                  <div class="flex pl-14 space-x-5">
+                <img class=" h-16 w-16 p-3 rounded-md " src="img/an.png">
+                <img class=" h-14 w-12 p-3 rounded-md " src="img/flu.png">
+                <img class=" h-14 w-12 p-3 rounded-md " src="img/dart.png">
                   </div>
               </div>
             </div>
