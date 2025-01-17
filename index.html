@@ -18,7 +18,10 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>  <!-- This line adds Typed.js -->
     
     <style>
-        .dark-bg {
+  body{
+    height: 2000px;
+  }
+ .dark-bg {
             background-color: #ecf0f3;
             color: black;
         }
@@ -62,6 +65,12 @@
 .a-cont:hover{
    background-color: #ff014f;
 }
+/* Add !important to force the hover effect */
+.bg-white:hover {
+    background-color: #ff014f !important;
+    color: white;
+}
+
 
     </style>
 </head>
@@ -148,33 +157,46 @@
     </main>
     
     <!--feature-->
-    <div id="features" class="features">
-        <hr class="my-6">
-        <p class="feat px-12 text-xl font-semibold">Features</p>
-        <h1 class="i-do px-12 text-3xl font-bold">What I Do</h1>
-        <div class="all-cont flex justify-center gap-8 mt-6">
-            <!-- First Container -->
-            <div class="f-cont h-96 w-96 flex flex-col justify-center items-center hover:bg-red-500  transition-colors duration-300 p-6 shadow-2xl shadow-white rounded-lg">
-                <h2 class="first-h2 text-xl font-semibold">Business Strategy</h2>
-                <p class="first-p text-center text-sm">I throw myself down among the tall grass by the stream as I lie close to the earth</p>
-            </div>
-    
-            <!-- Second Container -->
-            <div class="f-cont h-96 w-96 flex flex-col justify-center items-center hover:bg-red-500  transition-colors duration-300 p-6 shadow-2xl shadow-white rounded-lg">
-                <div class="icon-cont text-4xl">
-                    <i class="fa-regular fa-book-open"></i>
+    <div class="py-24">
+        <h1 class="text-4xl font-bold text-center mb-8">What I Do</h1>
+        <div class="mx-5 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="group bg-white p-6 rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-[#ff014f]">
+                <div class="text-red-500 text-3xl mb-4 transition-colors duration-300 ease-in-out group-hover:text-white">
+                    <i class="fas fa-bars"></i>
                 </div>
-                <h2 class="second-h2 text-xl font-semibold mt-4">App Developer</h2>
-                <p class="second-p text-center text-sm mt-2">It uses a dictionary of over 200 Latin words, combined with a handful of model sentences</p>
+                <h2 class="text-2xl font-bold mb-2">Business Strategy</h2>
+                <p class="text-gray-700 transition-colors duration-300 ease-in-out group-hover:text-white">I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
             </div>
-    
-            <!-- Third Container -->
-            <div class="f-cont h-96 w-96 flex flex-col justify-center items-center hover:bg-red-500 transition-colors duration-300 p-6 shadow-2xl shadow-white rounded-lg">
-                <h2 class="third-h2 text-xl font-semibold">App Development</h2>
-                <p class="third-p text-center text-sm">I throw myself down among the tall grass by the stream as I lie close to the earth</p>
+            <div class="group bg-white p-6 rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-[#ff014f]">
+                <div class="text-red-500 text-3xl mb-4 transition-colors duration-300 ease-in-out group-hover:text-white">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h2 class="text-2xl font-bold mb-2">App Development</h2>
+                <p class="text-gray-700 transition-colors duration-300 ease-in-out group-hover:text-white">It uses a dictionary of over 200 Latin words, combined with a handful of model sentence.</p>
+            </div>
+            <div class="group bg-white p-6 rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-[#ff014f]">
+                <div class="text-red-500 text-3xl mb-4 transition-colors duration-300 ease-in-out group-hover:text-white">
+                    <i class="fas fa-tv"></i>
+                </div>
+                <h2 class="text-2xl font-bold mb-2">Web Development</h2>
+                <p class="text-gray-700 transition-colors duration-300 ease-in-out group-hover:text-white">I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
             </div>
         </div>
     </div>
+    
+    
+    
+    
+    
+    
+    
+    
+
+ 
+    
+    
+    
+    
     
     
     

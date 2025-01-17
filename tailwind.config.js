@@ -2,13 +2,9 @@
 
 
 module.exports = {
+  content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'], // Adjust paths as needed
   theme: {
-    extend: {
-      colors: {
-        customGreen: '#ecf0f3',
-        redcolor:'#FF014F' // Add your custom color here
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };
