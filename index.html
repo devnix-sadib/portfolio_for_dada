@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-   
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,19 +8,17 @@
     <title>dada's portfolio</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-    <!-- Add Typed.js library -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>  <!-- This line adds Typed.js -->
-    
     <style>
-  body{
-    height: 2000px;
-  }
- .dark-bg {
+        body {
+            height: 2000px;
+            scroll-behavior: smooth; /* Enable smooth scrolling */
+        }
+
+        .dark-bg {
             background-color: #ecf0f3;
             color: black;
         }
@@ -39,44 +36,47 @@
             background-color: #ecf0f3;
         }
 
-        .redText,.hmm {
+        .redText, .hmm {
             color: #ff014f;
         }
-        .line{
+
+        .line {
             background-color: #ff014f;
         }
+
         .a-bg {
-    position: relative;
-    background: linear-gradient(to bottom,  #e1e5e9, #ced4d8 ,#ffffff,);
-    transition: transform 0.4s ease, filter 0.4s ease, background 0.4s ease, box-shadow 0.4s ease; 
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);/* transition for box-shadow */
-}
+            position: relative;
+            background: linear-gradient(to bottom, #e1e5e9, #ced4d8, #ffffff);
+            transition: transform 0.4s ease, filter 0.4s ease, background 0.4s ease, box-shadow 0.4s ease;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
 
-.a-bg:hover {
-    background: linear-gradient(to bottom, #ff014f, #ff014f); /* change gradient to a solid color */
-    transform: scale(1.2); 
-    filter: brightness(1.2); 
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* added shadow around the element */
-}
-.a-cont{
-    background-color: #ecf0f3;
-    color: black;
-}
-.a-cont:hover{
-   background-color: #ff014f;
-}
-/* Add !important to force the hover effect */
-.bg-white:hover {
-    background-color: #ff014f !important;
-    color: white;
-}
+        .a-bg:hover {
+            background: linear-gradient(to bottom, #ff014f, #ff014f);
+            transform: scale(1.2);
+            filter: brightness(1.2);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
 
+        .a-cont {
+            background-color: #ecf0f3;
+            color: black;
+        }
 
+        .a-cont:hover {
+            background-color: #ff014f;
+        }
+
+        .bg-white:hover {
+            background-color: #ff014f !important;
+            color: white;
+        }
     </style>
 </head>
+<body class="bg-customGreen relative dark-bg">
 
-<body class="bg-customGreen relative dark-bg"> <!-- Added dark-bg here for the whole page -->
-    <header class="p-4 shadow z-30 bg-customGreen fixed w-full dark-bg"> <!-- dark-bg added here -->
+    <!-- Header Section -->
+    <header class="p-4 shadow z-30 bg-customGreen fixed w-full dark-bg">
         <div class="container mx-auto flex items-center justify-between">
             <div class="flex items-center">
                 <img src="img/dada.jpg" alt="Profile" class="h-12 w-12 rounded-full">
@@ -98,6 +98,7 @@
         </div>
     </header>
 
+    <!-- Mobile Menu Section -->
     <div id="mobileMenu" class="fixed top-0 left-0 h-full w-64 transform -translate-x-full transition-transform duration-300 z-40 lg:hidden dark-bg">
         <div class="p-6">
             <div class="flex justify-center mb-4">
@@ -113,6 +114,8 @@
     </div>
 
     <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-20 lg:hidden"></div>
+
+    <!-- Main Content Section -->
     <main id="home" class="px-6 md:px-12 lg:px-24 pt-32">
         <div class="flex flex-wrap items-center lg:flex-nowrap gap-8 lg:gap-16">
             <!-- Image Section -->
@@ -126,65 +129,67 @@
                     <h1>HI, I'M</h1>
                     <span class="redText">ABIR BIN BILLA</span>
                 </div>
-                <div class="mt-4 ">
+                <div class="mt-4">
                     <span id="animation" class="font-bold text-xl md:text-xl lg:text-5xl text-black"></span>
                 </div>
                 <p class="text-base md:text-lg lg:text-xl text-gray-700 mt-6">
-    I use animation as a third dimension by which to simplify experiences and guiding through each and every interaction.
-</p>
-                
+                    I use animation as a third dimension by which to simplify experiences and guide through each and every interaction.
+                </p>
             </div>
         </div>
-              
-          <div class="px-5 pl-9">
-       <div class="flex">
-        <p class="pb-7">FIND WITH ME</p>
-        <p class="pl-44">BEST SKILL ON</p>
-       </div>
-            <div class=" flex">
-                <div class="flex space-x-10 ">
-                    <a href="https://www.facebook.com/bin.abir509"><img class="a-bg h-12 w-12 p-3 rounded-md hover:a-bg" src="img/fb.png"></a>
-                    <a href="https://www.instagram.com/litti_spy/"><img class="a-bg h-12 w-12 p-3 rounded-md hover:a-bg" src="img/photo.png"></a>
-                    <a href="https://www.linkedin.com/in/abir-bin-billal-74b33a237/"><img class="a-bg h-12 w-12 p-3 rounded-md hover:a-bg" src="img/lin.png"></a>
-                  </div>
-                  <div class="flex pl-14 space-x-5">
-                <img class=" h-16 w-16 p-3 rounded-md " src="img/an.png">
-                <img class=" h-14 w-12 p-3 rounded-md " src="img/flu.png">
-                <img class=" h-14 w-12 p-3 rounded-md " src="img/dart.png">
-                  </div>
-              </div>
-            </div>
     </main>
-    
-    <!--feature-->
-    <div class="py-24 md:text-center justify-center">
-        <h1 class="hmm text-lg px-10 py-3">FEATURE</h1>
-        <h1 class="text-4xl font-bold px-10 mb-8">What I Do</h1>
-        <div class="mx-10 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="group bg-white p-6 rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-[#ff014f]">
-                <div class="text-red-500 text-3xl mb-4 transition-colors duration-300 ease-in-out group-hover:text-white">
-                    <i class="fas fa-bars"></i>
-                </div>
-                <h2 class="text-2xl font-bold mb-2">Business Strategy</h2>
-                <p class="text-gray-900 transition-colors duration-300 ease-in-out group-hover:text-white">I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
+
+    <!-- Social Media Section -->
+    <div class="px-5 pl-9">
+        <div class="flex">
+            <p class="pb-7">FIND WITH ME</p>
+            <p class="pl-44">BEST SKILL ON</p>
+        </div>
+        <div class="flex">
+            <div class="flex space-x-10">
+                <a href="https://www.facebook.com/bin.abir509"><img class="a-bg h-12 w-12 p-3 rounded-md hover:a-bg" src="img/fb.png"></a>
+                <a href="https://www.instagram.com/litti_spy/"><img class="a-bg h-12 w-12 p-3 rounded-md hover:a-bg" src="img/photo.png"></a>
+                <a href="https://www.linkedin.com/in/abir-bin-billal-74b33a237/"><img class="a-bg h-12 w-12 p-3 rounded-md hover:a-bg" src="img/lin.png"></a>
             </div>
-            <div class="group bg-white p-6 rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-[#ff014f]">
-                <div class="text-red-500 text-3xl mb-4 transition-colors duration-300 ease-in-out group-hover:text-white">
-                    <i class="fas fa-book"></i>
-                </div>
-                <h2 class="text-2xl font-bold mb-2">App Development</h2>
-                <p class="text-gray-900 transition-colors duration-300 ease-in-out group-hover:text-white">It uses a dictionary of over 200 Latin words, combined with a handful of model sentence.</p>
-            </div>
-            <div class="group bg-white p-6 rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-[#ff014f]">
-                <div class="text-red-500 text-3xl mb-4 transition-colors duration-300 ease-in-out group-hover:text-white">
-                    <i class="fas fa-tv"></i>
-                </div>
-                <h2 class="text-2xl font-bold mb-2">Web Development</h2>
-                <p class="text-gray-900 transition-colors duration-300 ease-in-out group-hover:text-white">I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
+            <div class="flex pl-14 space-x-5">
+                <img class="h-16 w-16 p-3 rounded-md" src="img/an.png">
+                <img class="h-14 w-12 p-3 rounded-md" src="img/flu.png">
+                <img class="h-14 w-12 p-3 rounded-md" src="img/dart.png">
             </div>
         </div>
     </div>
-    
+
+    <!-- Features Section -->
+    <main id="features">
+        <div class="py-24">
+            <h1 class="hmm text-lg px-10 py-3">FEATURE</h1>
+            <h1 class="text-4xl font-bold px-10 mb-8">What I Do</h1>
+            <div class="mx-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group bg-white p-6 rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-[#ff014f]">
+                    <div class="text-red-500 text-3xl mb-4 transition-colors duration-300 ease-in-out group-hover:text-white">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-2">Business Strategy</h2>
+                    <p class="text-gray-900 transition-colors duration-300 ease-in-out group-hover:text-white">I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
+                </div>
+                <div class="group bg-white p-6 rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-[#ff014f]">
+                    <div class="text-red-500 text-3xl mb-4 transition-colors duration-300 ease-in-out group-hover:text-white">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-2">App Development</h2>
+                    <p class="text-gray-900 transition-colors duration-300 ease-in-out group-hover:text-white">It uses a dictionary of over 200 Latin words, combined with a handful of model sentences.</p>
+                </div>
+                <div class="group bg-white p-6 rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-[#ff014f]">
+                    <div class="text-red-500 text-3xl mb-4 transition-colors duration-300 ease-in-out group-hover:text-white">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-2">Web Development</h2>
+                    <p class="text-gray-900 transition-colors duration-300 ease-in-out group-hover:text-white">I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
     <script>
         const menuButton = document.getElementById("menuButton");
         const mobileMenu = document.getElementById("mobileMenu");
@@ -207,13 +212,12 @@
             typeSpeed: 50,
             backSpeed: 80,
             loop: true,
-            startDelay: 500,      // Delay before starting animation
-            backDelay: 1500,      // Delay before backspacing
+            startDelay: 500,
+            backDelay: 1500,
             fadeOut: true,
             showCursor: true,
             cursorChar: '|',
         });
     </script>
 </body>
-
 </html>
